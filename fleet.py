@@ -3,15 +3,23 @@
 # Create Date: August 11, 2021
 
 
+from robot import Robot
+
+
 class Fleet:
 
 # Constructor
 
    def __init__(self):
+       self.robots = []
 
 
-      robots = ["Robo1", "Robo2", "Robo3"]
+ 
 
 # Method
    def creat_fleet(self): 
-       pass
+       self.robots = []
+       
+
+
+      

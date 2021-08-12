@@ -2,6 +2,7 @@
 # Author: Aferu Minas
 # Create Date: August 11, 2021
 
+import random
 
 from fleet import Fleet
 from herd import Herd
@@ -10,7 +11,7 @@ class  Battlefield:
     #Constructor
 
     def __init__(self,name):
-        self.name = "  "
+        self.name = name
         
 
     # Methods
@@ -24,12 +25,19 @@ class  Battlefield:
     def battle(self):
         pass
 
-    def dino_turn(self, dinosaur):
-        pass
+    def dino_turn(self ):
+        self.dino_attacking = True
 
-    def robo_turn(self, robot):
-        pass
+    def robo_turn(self):
+        self.robo_attacking = True
 
+    def get_rand_numbers (num_1, num_2):
+       rand_number = random.randint(num_1, num_2)
+       return rand_number   
+    damage = get_rand_numbers (2,5)
+    print(damage)    
+
+    
     def show_dino_opponent_options(self):
         pass
 
